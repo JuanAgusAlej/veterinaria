@@ -1,14 +1,13 @@
 package org.example.veterinaria.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -20,5 +19,8 @@ public class Vacuna {
     private Long id;
     private String name;
     private LocalDate fechaVencimiento;
+
+    @ManyToMany(mappedBy = "vacunasAplicadas", fetch = FetchType.EAGER)
+    private List<Mascota> mascotas = new ArrayList<>();
 
 }

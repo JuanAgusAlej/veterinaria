@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -21,5 +23,12 @@ public class Mascota {
     private LocalDate fechaNacimiento;
 
     @ManyToOne
+    @JoinColumn(name = "veterinario_id")
     private Veterinaria veterinario;
+
+    @ManyToMany
+    @JoinTable(name = "Mascota_Vacuna",
+            joinColumns = @JoinColumn(name = "mascota_id"),
+            inverseJoinColumns =@JoinColumn(name="vacuna_id"))
+    private List<Vacuna> vacunasAplicadas = new ArrayList<>();
 }
