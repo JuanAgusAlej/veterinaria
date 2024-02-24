@@ -1,8 +1,8 @@
 --Veterinaria
-insert into Veterinaria (name, matricula, email) values ('Dr.Diego','123abc','drgiego@example.com');
-insert into Veterinaria (name, matricula, email) values ('Dr.Juan','111aaa','drjuan@example.com');
-insert into Veterinaria (name, matricula, email) values ('Dr.Sergio','999zzz','drsergio@example.com');
-insert into Veterinaria (name, matricula, email) values ('Dr.Maxi','222bbb','drmaxi@example.com');
+insert into Veterinario (name, matricula, email) values ('Dr.Diego','123abc','drgiego@example.com');
+insert into Veterinario (name, matricula, email) values ('Dr.Juan','111aaa','drjuan@example.com');
+insert into Veterinario (name, matricula, email) values ('Dr.Sergio','999zzz','drsergio@example.com');
+insert into Veterinario (name, matricula, email) values ('Dr.Maxi','222bbb','drmaxi@example.com');
 
 --Vacunas
 insert into vacuna (name, fecha_Vencimiento) values ('Vacuna contra la rabia','2026-01-10');

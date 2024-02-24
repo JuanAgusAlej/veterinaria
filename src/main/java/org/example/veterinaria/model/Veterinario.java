@@ -12,7 +12,7 @@ import java.util.List;
 @Data //agrega todos los getter, setter, toString, equals, hascode
 @NoArgsConstructor // constructor sin argumento
 @AllArgsConstructor //contructor con todos los argumentos
-public class Veterinaria {
+public class Veterinario {
 
 
     private String name;

@@ -24,7 +24,7 @@ public class Mascota {
 
     @ManyToOne
     @JoinColumn(name = "veterinario_id")
-    private Veterinaria veterinario;
+    private Veterinario veterinario;
 
     @ManyToMany
     @JoinTable(name = "Mascota_Vacuna",
